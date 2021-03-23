@@ -44,7 +44,7 @@ function Pomodoro() {
           if (timerValues.focusSeconds > 0) {
             return { ...timerValues, focusSeconds: timerValues.focusSeconds - 1 };
           } else {
-            new Audio("/tic-tok.wav").play() 
+            new Audio("/hand-bell.wav").play() 
             return {
               ...timerValues,
               focusSeconds: timerValues.baseTime * 60,
@@ -55,7 +55,7 @@ function Pomodoro() {
           if (timerValues.breakTimeInSecs > 0) {
             return { ...timerValues, breakTimeInSecs: timerValues.breakTimeInSecs - 1 };
           } else {
-            new Audio("/tic-tok.wav").play() 
+            new Audio("/boxing-bell.wav").play() 
             return {
               ...timerValues,
               breakTimeInSecs: timerValues.breakTimeBase * 60,
